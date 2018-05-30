@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Roman Kamenev](https://up.htmlacademy.ru/htmlcss/21/user/401223).
-* Наставник: <a href="https://htmlacademy.ru/profile/mpodanev">`[Михаил Поданев]`</a>(https://htmlacademy.ru/profile/mpodanev).
+* Наставник: [Михаил Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
