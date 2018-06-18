@@ -26,9 +26,23 @@
 					<span class="location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 				</p>
 				<div class="login">
-					<a href="" class="button button-login-enter">Войти</a>
-					<a href="" class="button button-login-checkIn">Регистрация</a>
-					<!--Здесь будет форма-->
+					<a href="login.html" class="button button-login-enter">Войти</a>
+					<button class="button button-login-checkIn">Регистрация</button>
+					<form class="checkIn-popup" method="post" action="https://echo.htmlacademy.ru" >
+						<p>
+							<label for="user-login">Ваше имя:</label>
+							<input id="user-login" type="text" name="login" placeholder="Логин">
+						</p>
+						<p>
+							<label for="user-email">Ваш e-mail:</label>
+							<input id="user-email" type="text" name="email" placeholder="email@example.com">
+						</p>
+						<p>
+							<label for="login-message">Текст письма</label>
+							<textarea name="message" id="login-message" cols="30" rows="10"></textarea>	
+						</p>
+						<button type="submit">Отправить</button>
+					</form>
 				</div>
 			</div>
 			<nav class="main-navigation">
@@ -56,10 +70,53 @@
 			<h1 class="page-title">Перфораторы</h1>
 
 			<section class="filters">
-				<h2 class="visually-hiden">Фильтр товаров</h2>
-				<!--Здесь будет форма-->
+				<h2 >Фильтр</h2>
+				<form class="filters-form" method="post" action="https://echo.htmlacademy.ru">
+					<div>
+						<h3 class="title-filters title-filters-price">Цена:</h3>
+						<label>
+							<input type="range" name="price">
+						</label>
+					</div>
+					<div>
+						<h3 class="title-filters title-filters-brands">Производители:</h3>
+						<label for="BOSCH">BOSCH</label>
+						<input id="BOSCH" type="checkbox" name="filters-brands">
+						<label for="INTERSKOL">ИНТЕРСКОЛ</label>
+						<input id="INTERSKOL" type="checkbox" name="filters-brands">
+						<label for="MAKITA">MAKITA</label>
+						<input id="MAKITA" type="checkbox" name="filters-brands">
+						<label for="DEWALT">DEWALT</label>
+						<input id="DEWALT" type="checkbox" name="filters-brands">
+						<label for="HITACHI">HITACHI</label>
+						<input id="HITACHI" type="checkbox" name="filters-brands">
+					</div>
+					<div>
+						<h3 class="title-filters title-filters-power">Питание:</h3>
+						<label for="DC">Аккамуляторные</label>
+						<input id="DC" type="radio" name="power_type">
+						<label for="AC">Сетевые</label>
+						<input id="AC" type="radio" name="power_type">
+					</div>
+					<button type="submit">Показать</button>
+				</form>
 			</section>
 			<section class="catalog">
+				<form class="sorting-form" method="post" action="https://echo.htmlacademy.ru">
+					<h3>Сортировка</h3>
+					<label for="by_price">По цене:</label>
+					<input id="by_price" type="radio" name="sorting_view">
+					<label for="by_type">По типу:</label>
+					<input id="by_type" type="radio" name="sorting_view">
+					<label for="by_function">По функционалу:</label>
+					<input id="by_function" type="radio" name="sorting_view">
+					<button class="button button-sorting">
+						<label class="visually-hidden">Вверх</label>
+					</button>
+					<button class="button button-sorting">
+						<label class="visually-hidden">Вниз</label>
+					</button>
+				</form>
 				<h2 class="visually-hidden">Список перфораторов</h2>
 				<ul class="catalog-list">
 					<li class="catalog-list-item">

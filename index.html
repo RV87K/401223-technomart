@@ -26,9 +26,23 @@
 					<span class="location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 				</p>
 				<div class="login">
-					<a href="" class="button button-login-enter">Войти</a>
-					<a href="" class="button button-login-checkIn">Регистрация</a>
-					<!--Здесь будет форма-->
+					<a href="login.html" class="button button-login-enter">Войти</a>
+					<button class="button button-login-checkIn">Регистрация</button>
+					<form class="checkIn-popup" method="post" action="https://echo.htmlacademy.ru" >
+						<p>
+							<label for="user-login">Ваше имя:</label>
+							<input id="user-login" type="text" name="login" placeholder="Логин">
+						</p>
+						<p>
+							<label for="user-email">Ваш e-mail:</label>
+							<input id="user-email" type="text" name="email" placeholder="email@example.com">
+						</p>
+						<p>
+							<label for="login-message">Текст письма</label>
+							<textarea name="message" id="login-message" cols="30" rows="10"></textarea>	
+						</p>
+						<button type="submit">Отправить</button>
+					</form>
 				</div>
 			</div>
 			<nav class="main-navigation">
@@ -82,8 +96,8 @@
 							<span>Соседям на радость</span>
 						</a>
 						<a class="button slider-open-catalog" href="catalog.html">Открыть каталог</a>
-						<a href="#" class="button slider-previous"></a>
-						<a href="#" class="button slider-next"></a>
+						<button class="button slider-button slider-previous"></button>
+						<button class="button slider-button slider-next"></button>
 					</div>
 				</div>
 			</section>
@@ -287,9 +301,9 @@
 						заехав в наш офис:
 					</p>
 					<a href="map.html" class="map">
-						 <img src="http://placehold.it/150x100" alt="ул. Б. Конюшенная, д. 19/8">
+						 <img src="img/map.png" alt="ул. Б. Конюшенная, д. 19/8">
 					</a>
-					<a href="#" class="button">Заблудились? Напишите нам!</a>
+					<button class="button button-adress">Заблудились? Напишите нам!</button>
 				</div>
 			</section>
 		</main>
