@@ -102,21 +102,18 @@
 				</form>
 			</section>
 			<section class="catalog">
-				<form class="sorting-form" method="post" action="https://echo.htmlacademy.ru">
-					<h3>Сортировка</h3>
-					<label for="by_price">По цене:</label>
-					<input id="by_price" type="radio" name="sorting_view">
-					<label for="by_type">По типу:</label>
-					<input id="by_type" type="radio" name="sorting_view">
-					<label for="by_function">По функционалу:</label>
-					<input id="by_function" type="radio" name="sorting_view">
+				<div class="sorting">
+					<h2>Сортировка</h2>
+					<a href="catalog.html" class="by_price">По цене:</a>
+					<a href="catalog.html" class="by_type">По типу:</a>
+					<a href="catalog.html" class="by_function">По функционалу:</a>
 					<button class="button button-sorting">
 						<label class="visually-hidden">Вверх</label>
 					</button>
 					<button class="button button-sorting">
 						<label class="visually-hidden">Вниз</label>
 					</button>
-				</form>
+				</div>
 				<h2 class="visually-hidden">Список перфораторов</h2>
 				<ul class="catalog-list">
 					<li class="catalog-list-item">
