@@ -3,19 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
+		<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
-			<nav class="nav-service">
+			<nav class="site-navigation">
 				<a class="logo" href="index.html">Техномарт</a>
-				<a href="#" class="search">Поиск</a>
-				<!--Здесь будет форма-->
+				<a href="#" class="search">
+					<form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+						<label class="visually-hidden" for="search-lb">Поиск</label>
+						<input id="search-lb" type="text" name="search" placeholder="Поиск">
+					</form>
+				</a>
 				<a href="#" class="marks">Закладки:<span class="count">0</span></a>
 				<a href="#" class="basket">Корзина:<span class="count">0</span></a>
 				<a href="#" class="price-order">Оформить заказ</a>
-				<!--Здесь будет форма-->
 			</nav>
-			<div class="cotainer-header">
+			<div class="container-header">
 				<p class="info-tagline">
 					<i>Интернет магазин<br>
 					строительных материалов<br>
@@ -41,7 +47,7 @@
 							<label for="login-message">Текст письма</label>
 							<textarea name="message" id="login-message" cols="30" rows="10"></textarea>	
 						</p>
-						<button type="submit">Отправить</button>
+						<button class="button" type="submit">Отправить</button>
 					</form>
 				</div>
 			</div>
@@ -89,15 +95,23 @@
 						</li>
 					</ul>
 					<div class="slider">
-						<img src="img/slider-icon-01.jpg" alt="Слайдер">
-						<img src="img/slider-icon-02.jpg" alt="Слайдер">
 						<a class="slider-list-item" href="catalog.html">
 							<h3>Дрели</h3>
 							<span>Соседям на радость</span>
 						</a>
+						<img src="img/slider-icon-01.jpg" alt="Слайдер">
+						<a class="slider-list-item" href="catalog.html">
+							<h3>Перфораторы</h3>
+							<span>Настоящие мужские игрушки</span>
+						</a>
+						<img src="img/slider-icon-02.jpg" alt="Слайдер">
 						<a class="button slider-open-catalog" href="catalog.html">Открыть каталог</a>
-						<button class="button slider-button slider-previous"></button>
-						<button class="button slider-button slider-next"></button>
+						<button class="button slider-button slider-back">
+							<img src="img/icon-back.svg" alt="Назад">
+						</button>
+						<button class="button slider-button slider-next">
+							<img src="img/icon-next.svg" alt="Вперед">
+						</button>
 					</div>
 				</div>
 			</section>
@@ -217,7 +231,7 @@
 					Мы стараемся изо всех сил, чтобы сделать ваши покупки прятными
 				</p>
 				<ul class="menu-service">
-					<li class="menu-service-option-current">
+					<li class="menu-service-option menu-service-option-current">
 						<a href="">Доставка</a>
 					</li>
 					<li class="menu-service-option">
@@ -312,7 +326,7 @@
 			<div class="main-footer-row main-footer-row-1">
 				<a href="index.html" class="logo footer-logo">Техномарт</a>
 				<nav class="footer-menu-white">
-	            	<ul class="list-footer-menu-white">
+	            	<ul class="list-footer-menu list-footer-menu-white">
 						<li class="list-footer-menu-item">
 							<a href="#" class="footer-menu-link">Компания</a>
 						</li>
@@ -337,7 +351,7 @@
 	              +7 (812) 555-05-55
 	            </p>
 	           	<nav class="footer-menu-gold">
-		        	<ul class="list-footer-menu-gold">
+		        	<ul class="list-footer-menu list-footer-menu-gold">
 						<li class="list-footer-menu-item">
 							<a href="#" class="footer-menu-link">Материалы</a>
 						</li>
